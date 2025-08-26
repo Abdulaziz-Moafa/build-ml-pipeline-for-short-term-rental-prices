@@ -7,6 +7,7 @@ def pytest_addoption(parser):
     parser.addoption("--csv", action="store")
     parser.addoption("--ref", action="store")
     parser.addoption("--kl_threshold", action="store")
+    parser.addoption("--ks_alpha", action="store")
     parser.addoption("--min_price", action="store")
     parser.addoption("--max_price", action="store")
 
@@ -42,6 +43,15 @@ def ref_data(request):
 
     return df
 
+
+@pytest.fixture(scope='session')
+def kl_threshold(request):
+    ks_alpha = request.config.option.ks_alpha
+
+    if ks_alpha is None:
+        pytest.fail("You must provide a ks_alpha for the KL test")
+
+    return float(ks_alpha)
 
 @pytest.fixture(scope='session')
 def kl_threshold(request):
