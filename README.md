@@ -31,6 +31,20 @@ In this project you will build such a pipeline.
   * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
 - [Cleaning up](#cleaning-up)
 
+## Important notes
+
+
+Quick links & important notes
+
+W&B project: https://wandb.ai/iimoaafa3/nyc_airbnb
+
+Python version: This project targets Python 3.10.
+
+Compatibility updates: A few library versions were updated from the original Udacity repo to ensure compatibility with Python 3.10 and recent tools (see environment.yml and conda.yml). If y.
+
+EDA: In some setups pandas_profiling.ProfileReport(...).to_widgets() doesn’t render. Use profile.to_file("profile.html") instead (instructions below) as Before ydata-profiling, this package was known as pandas-profiling.
+
+
 ## Preliminary steps
 
 ### Supported Operating Systems
