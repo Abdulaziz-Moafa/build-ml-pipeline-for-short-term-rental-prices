@@ -38,11 +38,10 @@ Quick links & important notes
 
 W&B project: https://wandb.ai/iimoaafa3/nyc_airbnb
 
-Python version: This project targets Python 3.10.
 
-Compatibility updates: A few library versions were updated from the original Udacity repo to ensure compatibility with Python 3.10 and recent tools (see environment.yml and conda.yml). If y.
+Compatibility updates: A few library versions were updated from the original Udacity repo to ensure compatibility with Python 3.10 and recent tools (see environment.yml and conda.yml).
 
-EDA: in EDA step pandas_profiling.ProfileReport(...).to_widgets() doesn’t render. Use profile.to_file("profile.html") as it use ydata-profiling , this package was known as pandas-profiling.
+EDA: in EDA step pandas_profiling.ProfileReport(...).to_widgets() doesn’t render. Use profile.to_file("profile.html") as it use ydata-profiling , this package was known as pandas-profiling before. details : https://docs.profiling.ydata.ai/latest/
 
 
 ## Preliminary steps
